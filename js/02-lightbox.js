@@ -28,9 +28,6 @@ function onImgClick(evt) {
   evt.preventDefault();
 
   if (evt.target.classList.contains("gallery__image")) {
-    return new SimpleLightbox(".gallery__item");
+    return new SimpleLightbox(".gallery__item", { captionsData: "alt" });
   }
 }
-// спрацьовує з 2-го кліку????????????
-// маленька картинка
-// не підвантажується напис
